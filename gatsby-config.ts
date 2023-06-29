@@ -16,6 +16,12 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: "Rising One",
+        short_name: "Rising One",
+        start_url: "/",
+        background_color: "#FFB47E",
+        theme_color: "#FFB47E",
+        display: "standalone",
         icon: "src/images/icon.png"
       }
     },
@@ -28,12 +34,6 @@ const config: GatsbyConfig = {
         path: "./src/images/"
       },
       __key: "images"
-    },
-    {
-      resolve: "gatsby-plugin-favicon",
-      options: {
-        logo: "./src/images/favicon.ico"
-      }
     }
   ]
 };
